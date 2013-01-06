@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 				VKapi api = new VKapi("vovan5@yandex.ru", "vova19898");
 
 				try {
-					JSONObject  obj = new JSONObject(api.searchAudio("Sam And The Womp!"));
+					JSONObject  obj = new JSONObject(api.searchAudio("What Else Is There"));
 					JSONArray array = new JSONArray(obj.getString("response"));
 					return array.getJSONObject(1);
 				} catch (JSONException e) {
